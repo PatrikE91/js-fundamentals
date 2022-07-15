@@ -8,17 +8,17 @@
 //
 // TODO: write code below
 
-
-function add(num){
-  num = num + 1
-  return num}
+// function add(num) {
+//   num = num + 1
+//   return num
+// }
+const add = (num) => num + 1
 //  for(let i = 0; i < numOutput; i++){
 //    numOutPut.push(i)
 //  }
 //   return numOutPut
 // }
 // console.log(add(1))
-
 
 // Define a function that takes any person's name and returns it with a smiley :)!
 // Remember to make the name capitalized!
@@ -31,28 +31,23 @@ function add(num){
 //
 // TODO: write code below
 
+// function sayName(name) {
+//   let newName = ''
+//   for (i = 0; i < name.length; i++) {
+//     if (i === 0) {
+//       newName = newName + name[0].toUpperCase()
+//     } else {
+//       newName = newName + name[i]
+//     }
+//   }
+//   return 'Hi, ' + newName + ' :)'
+// }
 
-function sayName(name) {
-  let newName = ''
-    for (i = 0; i < name.length; i++) {
-      if (i === 0) {
-       newName = newName + name[0].toUpperCase()
-      } else {
-          newName = newName + name[i]
-      }
-      // name[0] = name[i].toUpperCase()
-      
-    }
-    
-    
-  return 'Hi, ' + newName + " :)"
-  
+// console.log(sayName('patrik'))
+const sayName = name => {
+  return name.charAt(0).toUpperCase() + name.slice(1)
 }
-
-console.log(sayName("patrik"))
-
-
-
+console.log(sayName('patrik'))
 // TODO: change undefined to be the name of the functions you defined
 module.exports = {
   a: add, // change undefined to be the name of the function you defined to increment a number (the first TODO)
