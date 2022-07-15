@@ -10,15 +10,24 @@
 //
 // TODO: write code below
 
-function twoNum(lower, upper) {
+// function twoNum(lower, upper) {
+//   const outPut = []
+//   for (i = lower; i <= upper; i++) {
+//     outPut.push(i)
+//   }
+//   return outPut
+// }
+// twoNum(1, 3)
+
+const twoNum = (lower, upper) => {
   const outPut = []
   for (i = lower; i <= upper; i++) {
     outPut.push(i)
   }
   return outPut
 }
-twoNum(1, 3)
 
+console.log(twoNum(1, 3))
 // define a function that takes two arguments: a string and a number.
 // The function should return the same string but in upper case with exclamation
 // marks appended to the end. The number of exclamation marks should be
@@ -31,7 +40,18 @@ twoNum(1, 3)
 //
 // TODO: write code below
 
-function test(word, number) {
+// function test(word, number) {
+//   let exclamation = ''
+//   let escMark = '!'
+
+//   exclamation = word.toUpperCase()
+
+//   return exclamation + escMark.repeat(number)
+// }
+
+// console.log(test('oh no', 2))
+
+const test = (word, number) => {
   let exclamation = ''
   let escMark = '!'
 
